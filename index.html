@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Among Us: New Roles</title>
+
+<style>
+body {
+  background:black;
+  color:white;
+  font-family:Arial;
+  text-align:center;
+}
+
+.player {
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  display:inline-block;
+  margin:10px;
+}
+
+.red { background:red; }
+.blue { background:blue; }
+.green { background:green; }
+
+button {
+  padding:10px;
+  margin:5px;
+  font-size:16px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Among Us: New Roles ⭐</h1>
+
+<p id="roleText">Your role: ???</p>
+
+<div class="player red"></div>
+<div class="player blue"></div>
+<div class="player green"></div>
+
+<br><br>
+
+<button onclick="beViper()">Become Viper</button>
+<button onclick="beDetective()">Become Detective</button>
+
+<p id="log"></p>
+
+<script>
+function beViper() {
+  document.getElementById("roleText").innerText =
+    "Your role: Viper 🐍";
+}
+
+function beDetective() {
+  document.getElementById("roleText").innerText =
+    "Your role: Detective 🕵️";
+}
+</script>
+
+</body>
+</html>
